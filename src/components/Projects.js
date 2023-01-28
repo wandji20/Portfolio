@@ -86,6 +86,8 @@ const Projects = () => (
                     style={{
                       display: 'flex', textDecoration: 'none', alignItems: 'center', marginRight: '10px', color: 'inherit',
                     }}
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <Typography sx={{ display: 'inline-block', marginRight: '5px' }}>live</Typography>
                     <RemoveRedEyeIcon />
@@ -95,6 +97,8 @@ const Projects = () => (
                     style={{
                       display: 'flex', textDecoration: 'none', alignItems: 'center', color: 'inherit',
                     }}
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     <Typography sx={{ display: 'inline-block', marginRight: '5px' }}>source code</Typography>
                     <GitHubIcon />

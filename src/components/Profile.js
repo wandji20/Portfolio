@@ -8,6 +8,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import PropTypes from 'prop-types';
 import Nav from './Nav';
 import backgroungImage from '../images/wandji20.jpg';
+import image from '../images/wandji-crop.jpg';
 
 const Profile = ({ activeNav }) => (
   <Grid sx={{
@@ -29,8 +30,21 @@ const Profile = ({ activeNav }) => (
           width: {
             xs: '100%', sm: '90%', md: '80%', lg: '75%',
           },
+          display: 'flex',
         }}
       >
+        <Grid sx={{
+          display: { xs: 'none', md: 'flex' },
+          maxWidth: { md: 280 },
+          margin: '40px 50px 0 0',
+          position: 'relative',
+          width: '100%',
+        }}
+        >
+          <Box position="absolute">
+            <img style={{ borderRadius: '5px' }} src={image} alt="wandji bertrand" width="100%" />
+          </Box>
+        </Grid>
         <Grid sx={{ padding: 0, color: 'white' }}>
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
             <Typography

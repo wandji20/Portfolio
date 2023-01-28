@@ -34,7 +34,6 @@ const Nav = ({ activeNav }) => {
         }}
       >
         <Container
-          maxWidth="xl"
           sx={{
             height: '100%',
             padding: {
@@ -89,13 +88,23 @@ const Nav = ({ activeNav }) => {
             <Box sx={{
               flexGrow: 1,
               display: {
-                xs: 'none', md: 'flex', justifyContent: 'space-around', minWidth: '60%',
+                xs: 'none', md: 'flex',
               },
+              color,
             }}
             >
               {sections.map((section) => (
                 <Button
-                  sx={{ text: 'uppercase', color: 'white', display: 'block' }}
+                  sx={{
+                    text: 'uppercase',
+                    color: '#555',
+                    display: 'block',
+                    paddingLeft: 0,
+                    marginRight: '50px',
+                    fontSize: '14px',
+                    fontWeight: 800,
+                    fontFamily: 'Roboto Mono,monospace',
+                  }}
                   key={section}
                   onClick={handleCloseNavMenu}
                 >
