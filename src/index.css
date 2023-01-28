@@ -1,27 +1,121 @@
-body {
-  margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+body {
+  font-family: Roboto,sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #555;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  position: fixed;
+  padding: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 80px;
+  transition: all .5s;
+}
+
+.contact-list {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto Mono,monospace;
+}
+
+.contact-list dd {
+  padding-left: 80px;
+  margin-bottom: 15px;
+}
+
+.contact-list dt {
+  float: left;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#profile dt {
+  opacity: 0.4;
+}
+
+.profile-social-icon {
+  font-size: 24px;
+  margin-right: 15px !important;
+  opacity: 0.4;
+  color: #fff !important;
+}
+
+.profile-social-icon:hover {
+  opacity: 1;
+}
+
+.resume-list .resume-list-item::before {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #6d56c1;
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  background-color: #fff;
+  left: 8px;
+}
+
+.resume-list .resume-list-item {
+  border-left: 2px solid #6d56c1;
+  padding-left: 25px;
+  padding-bottom: 50px;
+}
+
+#resume .resume-list-item-title {
+  text-transform: uppercase;
+  color: #6d56c1;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Roboto Mono,monospace;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.project-image {
+  height: 190px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.progress-list {
+  width: 100%;
+  font-family: Inconsolata,monospacse;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 450px) {
+  .project-image {
+    /* sx={{
+  
+      height: {
+        xs: 190, md: 205, lg: 260, xl: 390,
+      },
+      width: {
+        sm: '100%', md: 353, lg: 450, xl: 650,
+      },
+    }} */
+    height: 205px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .project-image {
+    height: 250px;
+  }
+
+  .resume-list .resume-list-item::before {
+    left: 32px;
+  }
 }
