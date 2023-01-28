@@ -37,7 +37,7 @@ const Skill = ({ skill }) => {
   }, [isVisible]);
 
   return (
-    <Box>
+    <Box sx={{ width: { xs: '100%', md: '45%' } }}>
       <p className="progress-list">
         <span>{skill.name}</span>
         {' '}

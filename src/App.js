@@ -51,8 +51,14 @@ function App() {
   return (
     <Grid>
       <Profile activeNav />
-      <Grid sx={{ padding: { xs: '50px 16px' } }}>
-        <Container sx={{ padding: 0 }}>
+      <Grid sx={{ padding: { xs: '50px 16px', sm: '50px 0' } }}>
+        <Container sx={{
+          padding: '0 !important',
+          width: {
+            xs: '100%', sm: '90%', md: '80%', lg: '75%',
+          },
+        }}
+        >
           <Typography
             variant="h2"
             sx={{
@@ -66,7 +72,7 @@ function App() {
           >
             Hi_
           </Typography>
-          <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit' }}>
+          <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' } }}>
             Resilient full-stack developer with a great passion for writing tested reusable code.
             Excel at working with teams and building software solutions using Ruby on Rails,
             Stimulus JS, React, JavaScript, and GraphQL.

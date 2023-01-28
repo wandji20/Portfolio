@@ -19,7 +19,18 @@ const Profile = ({ activeNav }) => (
   >
     <Grid sx={{ background: 'linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95))' }}>
       <Nav activeNav={activeNav} />
-      <Container id="hello" sx={{ fontFamily: 'Roboto Mono,monospace', paddingTop: { xs: '80px' } }}>
+      <Container
+        id="hello"
+        sx={{
+          fontFamily: 'Roboto Mono,monospace',
+          padding: {
+            xs: '80px 16px 0', sm: '80px 0 0',
+          },
+          width: {
+            xs: '100%', sm: '90%', md: '80%', lg: '75%',
+          },
+        }}
+      >
         <Grid sx={{ padding: 0, color: 'white' }}>
           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
             <Typography

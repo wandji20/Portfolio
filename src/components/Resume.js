@@ -13,11 +13,29 @@ const Resume = () => {
     { name: 'HTML', competence: 85 },
     { name: 'CSS', competence: 83 },
     { name: 'GIT', competence: 72 },
+    { name: 'Jira', competence: 80 },
   ];
 
   return (
-    <Grid sx={{ padding: '50px 16px', scrollMarginTop: '80px' }} id="resume">
-      <Container sx={{ padding: 0 }}>
+    <Grid
+      sx={{
+        padding: { xs: '50px 16px', sm: '50px 0' },
+        scrollMarginTop: '80px',
+      }}
+      id="resume"
+    >
+      <Container
+        sx={{
+          padding: { xs: '0 16px', sm: 0 },
+          width: {
+            xs: '100%',
+            sm: '90%',
+            md: '80%',
+            lg: '75%',
+            position: 'relative',
+          },
+        }}
+      >
         <Typography
           variant="h2"
           sx={{
@@ -26,7 +44,7 @@ const Resume = () => {
         >
           Resume_
         </Typography>
-        <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit' }}>
+        <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' } }}>
           In the past year, I have served as a full-stack developer at
           <a
             href="https://marbleflows.com"
@@ -41,12 +59,15 @@ const Resume = () => {
           and performance improvements.
 
         </Typography>
-        <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit' }}>
+        <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' } }}>
           I achieved these by properly organizing my work and time, staying focused on the task,
           learning new technologies (e.g. MaterialUI, Jira, GraphQL), and staying in constant
           communication with the rest of the team
         </Typography>
-        <Typography sx={{ marginBottom: '30px', lineHeight: 'inherit', fontSize: 'inherit' }}>
+        <Typography sx={{
+          marginBottom: '30px', lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' },
+        }}
+        >
           When I am not coding, you will find me playing soccer or teaching Mathematics.
         </Typography>
         <Grid className="resume">
@@ -142,7 +163,7 @@ const Resume = () => {
             >
               General Skills
             </Typography>
-            <Grid sx={{ display: 'flex', flexDirection: 'column' }}>
+            <Grid sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
               {
                 skills.map((skill) => (
                   <Skill key={skill.name} skill={skill} />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  Box, Button, Grid, Link, Snackbar, TextField, Typography,
+  Box, Button, Container, Grid, Link, Snackbar, TextField, Typography,
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -85,149 +85,165 @@ const Contact = () => {
         }}
         id="contact"
       >
-        <Typography
-          variant="p"
+        <Container
           sx={{
-            margiBbottom: '40px',
-            fontSize: '36px',
-            lineHeight: '42px',
-            fontFamily: 'Roboto Mono,monospace',
+            padding: '0 !important',
+            width: {
+              xs: '100%', sm: '90%', md: '80%', lg: '75%',
+            },
           }}
         >
-          Get in touch_
-        </Typography>
-        <Grid>
-          <Grid>
-            <Box sx={{ marginBottom: '20px' }}>
-              <dl className="contact-list">
-                <dt>PHONE</dt>
-                <dd>+(237) 678 163 225</dd>
-                <dt>EMAIL</dt>
-                <dd>wbertrand10@gmail.com</dd>
-              </dl>
-            </Box>
-            <Box sx={{ display: 'flex', paddingBottom: '35px' }}>
-              <Link href="https://twitter.com/wandjibertrand" rel="noopener" target="_blank" className="profile-social-icon">
-                <GitHubIcon />
-              </Link>
-              <Link href="https://www.linkedin.com/in/wandji-bertrand/" rel="noopener" target="_blank" className="profile-social-icon">
-                <LinkedInIcon />
-              </Link>
-              <Link href="https://github.com/wandji20" rel="noopener" target="_blank" className="profile-social-icon">
-                <TwitterIcon />
-              </Link>
-            </Box>
-          </Grid>
-          <Grid sx={{
-            fontSize: '16px',
-            lineHeight: '24px',
-            fontFamily: 'Roboto Mono,monospace',
-          }}
+          <Typography
+            variant="p"
+            sx={{
+              marginBottom: '40px',
+              fontSize: '36px',
+              lineHeight: '42px',
+              fontFamily: 'Roboto Mono,monospace',
+              display: 'block',
+            }}
           >
-            <Typography sx={{
-              margin: '10px 0', fontFamily: 'inherit', fontSize: 'inherit', lineHeight: 'inherit',
+            Get in touch_
+          </Typography>
+          <Grid sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+            <Grid sx={{
+              width: { xs: '100%', md: '48%' },
+              display: { md: 'flex' },
+              flexDirection: { md: 'column' },
+              justifyContent: { md: 'space-around' },
             }}
             >
-              Or send me an email here_
-            </Typography>
-            <form onSubmit={sendMessage}>
-              <CustomTextField
-                sx={{
-                  width: '100%', marginBottom: '15px', color: 'white', borderColor: 'white',
-                }}
-                inputProps={{
-                  sx: {
-                    color: 'white', borderColor: 'white', fontFamily: 'Roboto Mono,monospace', fontSize: '16px', lineHeight: '24px',
-                  },
-                }}
-                label="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                size="small"
-                variant="outlined"
-                required
-              />
-              <CustomTextField
-                sx={{
-                  width: '100%', marginBottom: '15px', color: 'white', borderColor: 'white',
-                }}
-                inputProps={{
-                  sx: {
-                    color: 'white', borderColor: 'white', fontFamily: 'Roboto Mono,monospace', fontSize: '16px', lineHeight: '24px',
-                  },
-                }}
-                label="email"
-                value={email}
-                size="small"
-                variant="outlined"
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-              <CustomTextField
-                sx={{ width: '100%', marginBottom: '15px' }}
-                inputProps={{
-                  sx: {
-                    color: 'white',
-                    borderColor: 'white',
-                    fontFamily: 'Roboto Mono,monospace',
-                    fontSize: '16px',
-                    lineHeight: '24px',
-                    display: 'block',
-                    height: 'auto',
-                  },
-                }}
-                multiline
-                label="message"
-                value={message}
-                size="small"
-                variant="outlined"
-                onChange={(e) => setMessage(e.target.value)}
-                required
-              />
-              <Button
-                variant="contained"
-                type="submit"
-                sx={{
-                  background: '#6d56c1',
-                  borderRadius: '25px',
-                  width: '100%',
-                  fontWeight: 600,
-                  '&:hover': { background: '#6d56c1' },
-                  '&:focus': { background: '#6d56c1' },
-                }}
+              <Box sx={{ marginBottom: '20px' }}>
+                <dl className="contact-list">
+                  <dt>PHONE</dt>
+                  <dd>+(237) 678 163 225</dd>
+                  <dt>EMAIL</dt>
+                  <dd>wbertrand10@gmail.com</dd>
+                </dl>
+              </Box>
+              <Box sx={{ display: 'flex', paddingBottom: '35px' }}>
+                <Link href="https://twitter.com/wandjibertrand" rel="noopener" target="_blank" className="profile-social-icon">
+                  <GitHubIcon />
+                </Link>
+                <Link href="https://www.linkedin.com/in/wandji-bertrand/" rel="noopener" target="_blank" className="profile-social-icon">
+                  <LinkedInIcon />
+                </Link>
+                <Link href="https://github.com/wandji20" rel="noopener" target="_blank" className="profile-social-icon">
+                  <TwitterIcon />
+                </Link>
+              </Box>
+            </Grid>
+            <Grid sx={{
+              fontSize: '16px',
+              lineHeight: '24px',
+              fontFamily: 'Roboto Mono,monospace',
+              width: { xs: '100%', md: '48%' },
+            }}
+            >
+              <Typography sx={{
+                margin: '10px 0', fontFamily: 'inherit', fontSize: 'inherit', lineHeight: 'inherit',
+              }}
               >
-                Send
-              </Button>
-            </form>
+                Or send me an email here_
+              </Typography>
+              <form onSubmit={sendMessage}>
+                <CustomTextField
+                  sx={{
+                    width: '100%', marginBottom: '15px', color: 'white', borderColor: 'white',
+                  }}
+                  inputProps={{
+                    sx: {
+                      color: 'white', borderColor: 'white', fontFamily: 'Roboto Mono,monospace', fontSize: '16px', lineHeight: '24px',
+                    },
+                  }}
+                  label="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  size="small"
+                  variant="outlined"
+                  required
+                />
+                <CustomTextField
+                  sx={{
+                    width: '100%', marginBottom: '15px', color: 'white', borderColor: 'white',
+                  }}
+                  inputProps={{
+                    sx: {
+                      color: 'white', borderColor: 'white', fontFamily: 'Roboto Mono,monospace', fontSize: '16px', lineHeight: '24px',
+                    },
+                  }}
+                  label="email"
+                  value={email}
+                  size="small"
+                  variant="outlined"
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+                <CustomTextField
+                  sx={{ width: '100%', marginBottom: '15px' }}
+                  inputProps={{
+                    sx: {
+                      color: 'white',
+                      borderColor: 'white',
+                      fontFamily: 'Roboto Mono,monospace',
+                      fontSize: '16px',
+                      lineHeight: '24px',
+                      display: 'block',
+                      height: 'auto',
+                    },
+                  }}
+                  multiline
+                  label="message"
+                  value={message}
+                  size="small"
+                  variant="outlined"
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
+                />
+                <Button
+                  variant="contained"
+                  type="submit"
+                  sx={{
+                    background: '#6d56c1',
+                    borderRadius: '25px',
+                    width: '100%',
+                    fontWeight: 600,
+                    '&:hover': { background: '#6d56c1' },
+                    '&:focus': { background: '#6d56c1' },
+                  }}
+                >
+                  Send
+                </Button>
+              </form>
+            </Grid>
           </Grid>
-        </Grid>
+          <Snackbar
+            sx={{
+              minWidth: 'auto',
+              color: 'white',
+              background: 'transparent',
+              '& .MuiSnackbarContent-root': {
+                background: `${background}`,
+                minWidth: 'auto',
+              },
+              '& .MuiSnackbarContent-message': {
+                padding: 0,
+              },
+            }}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'right',
+            }}
+            open={showNotification}
+            onClose={() => {
+              setShowNotification(false);
+              setNotificationMessage('');
+            }}
+            message={notificationMessage}
+            key="bottomright"
+          />
+        </Container>
       </Grid>
-
-      <Snackbar
-        sx={{
-          minWidth: 'auto',
-          color: 'white',
-          background: 'transparent',
-          '& .MuiSnackbarContent-root': {
-            background: `${background}`,
-            minWidth: 'auto',
-          },
-          '& .MuiSnackbarContent-message': {
-            padding: 0,
-          },
-        }}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'right',
-        }}
-        open={showNotification}
-        onClose={() => {
-          setShowNotification(false);
-          setNotificationMessage('');
-        }}
-        message={notificationMessage}
-        key="bottomright"
-      />
 
     </>
 

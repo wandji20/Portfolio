@@ -23,8 +23,14 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Projects = () => (
-  <Grid sx={{ padding: '50px 16px', scrollMarginTop: '80px' }} id="projects">
-    <Container sx={{ padding: 0 }}>
+  <Grid sx={{ padding: { xs: '50px 16px', sm: '50px 0' }, scrollMarginTop: '80px' }} id="projects">
+    <Container sx={{
+      padding: '0 !important',
+      width: {
+        xs: '100%', sm: '90%', md: '80%', lg: '75%',
+      },
+    }}
+    >
       <Typography
         variant="h2"
         sx={{
@@ -33,20 +39,22 @@ const Projects = () => (
       >
         My Projects_
       </Typography>
-      <Grid>
+      <Grid container sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }} spacing={{ xs: 3, sm: 4 }}>
         {projects.map((project) => (
-          <Box key={project.id} sx={{ padding: { xs: '15px 0' }, maxWidth: 600 }}>
+          <Grid item key={project.id} sx={{ width: { xs: '100%' } }}>
             <Card sx={{
               display: { xs: 'block', md: 'flex' },
-              justifyContent: 'center',
+              justifyContent: 'space-between',
               alignItems: 'center',
+              padding: '10px',
             }}
             >
               <CardMedia
                 className="project-image"
                 image={project.url}
+                sx={{ width: { md: '48%' } }}
               />
-              <Box>
+              <Box sx={{ width: { md: '48%' } }}>
                 <CardContent>
                   <Typography
                     gutterBottom
@@ -94,7 +102,7 @@ const Projects = () => (
                 </CardActions>
               </Box>
             </Card>
-          </Box>
+          </Grid>
         ))}
       </Grid>
     </Container>

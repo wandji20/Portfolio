@@ -33,7 +33,18 @@ const Nav = ({ activeNav }) => {
           boxShadow,
         }}
       >
-        <Container maxWidth="xl" sx={{ height: '100%' }}>
+        <Container
+          maxWidth="xl"
+          sx={{
+            height: '100%',
+            padding: {
+              xs: '0 16px', sm: 0,
+            },
+            width: {
+              xs: '100%', sm: '90%', md: '80%', lg: '75%',
+            },
+          }}
+        >
           <Toolbar disableGutters sx={{ alignItems: `${activeNav ? 'center' : 'flex-end'}`, height: '100%' }}>
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
               <IconButton
