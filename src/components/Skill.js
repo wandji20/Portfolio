@@ -22,7 +22,7 @@ const Skill = ({ skill }) => {
     if (currentProgressRef) { observer.observe(currentProgressRef); }
 
     return () => observer.unobserve(currentProgressRef);
-  }, [progressRef.current]);
+  }, [progressRef]);
 
   useEffect(() => {
     if (isVisible) {
@@ -34,7 +34,7 @@ const Skill = ({ skill }) => {
     }
     setProgress(0);
     return undefined;
-  }, [isVisible]);
+  }, [isVisible, skill]);
 
   return (
     <Box sx={{ width: { xs: '100%', md: '45%' } }}>
