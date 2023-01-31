@@ -45,7 +45,7 @@ const Resume = () => {
           Resume_
         </Typography>
         <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' } }}>
-          In the past year, I have served as a full-stack developer at
+          In the past year, I served as a full-stack developer at
           <a
             href="https://marbleflows.com"
             target="_blank"
@@ -55,14 +55,18 @@ const Resume = () => {
             Marbleflows
           </a>
           .
-          Completing over 100 plus Jira tasks by building new features, fixing bugs,
+          Completing over
+          {' '}
+          <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>100 plus</em>
+          {' '}
+          Jira tasks by building new features, fixing bugs,
           and performance improvements.
 
         </Typography>
         <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' } }}>
           I achieved these by properly organizing my work and time, staying focused on the task,
           learning new technologies (e.g. MaterialUI, Jira, GraphQL), and staying in constant
-          communication with the rest of the team
+          communication with the rest of the team.
         </Typography>
         <Typography sx={{
           marginBottom: '30px', lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' },
@@ -87,28 +91,49 @@ const Resume = () => {
             </Typography>
             <Grid className="resume-list-item">
               <Typography className="resume-list-item-title">MarbleFlows</Typography>
-              <Typography>March 2022  -  Present</Typography>
+              <Typography>
+                {' '}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>March 2022  -  Present</em>
+              </Typography>
               <Typography>
                 Add secure payments and API integrations,
                 landing pages based on Figma designs, bug fixes, and performance improvements
-                in slow queries resulting in up to 7000 ms plus speed increase
+                in slow queries resulting in up to
+                {' '}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>7000 ms</em>
+                {' '}
+                plus speed increase
                 and overall app performance.
               </Typography>
             </Grid>
             <Grid className="resume-list-item">
               <Typography className="resume-list-item-title">Freelance Developer</Typography>
-              <Typography>Oct 2021  -  Feb 2022</Typography>
               <Typography>
-                Completed fifteen (15) jira tasks for an upwork project (smart car parking system)
-                while performing both backend and front-end roles alongside
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>Oct 2021  -  Feb 2022</em>
+                {' '}
+              </Typography>
+              <Typography>
+                Completed
+                {' '}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>eight (08)</em>
+                {' '}
+                jira tasks for an upwork project (smart car parking system)
+                while performing backend and front-end roles alongside
                 invloved in code review process.
               </Typography>
             </Grid>
             <Grid className="resume-list-item">
               <Typography className="resume-list-item-title">Microverse code Reviewer</Typography>
-              <Typography>Oct 2010  -  July 2013</Typography>
               <Typography>
-                Performed 100+ code reviews on Html, CSS, Javascript, and React-Redux projects
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>September 2021  -  February 2022</em>
+                {' '}
+              </Typography>
+              <Typography>
+                Performed
+                {' '}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>100+</em>
+                {' '}
+                code reviews on Html, CSS, Javascript, React-Redux, Ruby, and Ruby on Rails projects
                 while giving constructive and supportive feedback.
               </Typography>
             </Grid>
@@ -129,9 +154,13 @@ const Resume = () => {
             </Typography>
             <Grid className="resume-list-item">
               <Typography className="resume-list-item-title">Microverse</Typography>
-              <Typography>Oct 2021  -  Aug 2022</Typography>
+              <Typography><em style={{ fontStyle: 'inherit', fontWeight: '600' }}> Oct 2020  -  Aug 2021</em></Typography>
               <Typography>
-                Spent 1200+ hours mastering algorithms, data structures, and full-stack development
+                Spent
+                {' '}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>1200+</em>
+                {' '}
+                hours mastering algorithms, data structures, and full-stack development
                 while simultaneously developing projects with, Ruby on Rails,
                 Javascript, React and Redux, HTML, CSS, and, Bootstrap.
                 Developed skills in remote pair programming using GitHub, industry-standard GitFlow,
@@ -141,7 +170,7 @@ const Resume = () => {
             </Grid>
             <Grid className="resume-list-item">
               <Typography className="resume-list-item-title">University of Buea</Typography>
-              <Typography>Oct 2010  -  July 2013</Typography>
+              <Typography><em style={{ fontStyle: 'inherit', fontWeight: '600' }}> Oct 2010  -  July 2013</em></Typography>
               <Typography>
                 Completed coursework with First Class Honors.
                 Mastered skills in communication and understanding enabling me to stay

@@ -63,6 +63,7 @@ function App() {
             variant="h2"
             sx={{
               marginBottom: '40px',
+              marginTop: { md: '40px' },
               fontSize: '36px',
               lineHeight: '42px',
               fontFamily: 'Roboto Mono,monospace',
@@ -73,9 +74,12 @@ function App() {
             Hi_
           </Typography>
           <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' } }}>
-            Resilient full-stack developer with a great passion for writing tested reusable code.
-            Excel at working with teams and building software solutions using Ruby on Rails,
-            Stimulus JS, React, JavaScript, and GraphQL.
+            Resilient and diligent full-stack developer with a great passion
+            for writing tested
+            reusable code. With strong problem-solving and analytical skills,
+            and excel at working with teams and building software
+            solutions using latest technologies.
+            Well-recognized for commitment and completing work on time.
           </Typography>
           <Typography sx={{ marginBottom: '36px', lineHeight: 'inherit', fontSize: 'inherit' }}>Open to new roles.</Typography>
           <Button
