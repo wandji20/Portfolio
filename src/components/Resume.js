@@ -46,11 +46,12 @@ const Resume = () => {
         </Typography>
         <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' } }}>
           In the past year, I served as a full-stack developer at
+          {' '}
           <a
             href="https://marbleflows.com"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ textDecoration: 'none', marginLeft: '4px', display: 'inline' }}
+            style={{ textDecoration: 'none', display: 'inline' }}
           >
             Marbleflows
           </a>
@@ -59,7 +60,7 @@ const Resume = () => {
           {' '}
           <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>100 plus</em>
           {' '}
-          Jira tasks by building new features, fixing bugs,
+          Jira tasks by building features, fixing bugs,
           and performance improvements.
 
         </Typography>
@@ -96,14 +97,15 @@ const Resume = () => {
                 <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>March 2022  -  Present</em>
               </Typography>
               <Typography>
-                Add secure payments and API integrations,
-                landing pages based on Figma designs, bug fixes, and performance improvements
-                in slow queries resulting in up to
+                Add secure payment gateways and API integrations,
+                landing pages based on Figma designs, bug fixes,
+                and improved performance for slow queries.
+                This resulted in up to
                 {' '}
-                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>7000 ms</em>
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>7000ms</em>
                 {' '}
                 plus speed increase
-                and overall app performance.
+                and improved performance overall.
               </Typography>
             </Grid>
             <Grid className="resume-list-item">
@@ -117,9 +119,9 @@ const Resume = () => {
                 {' '}
                 <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>eight (08)</em>
                 {' '}
-                jira tasks for an upwork project (smart car parking system)
-                while performing backend and front-end roles alongside
-                invloved in code review process.
+                Jira tasks for a smart car parking system while performing
+                backend and front-end roles alongside
+                being involved in the code review process.
               </Typography>
             </Grid>
             <Grid className="resume-list-item">
@@ -133,7 +135,7 @@ const Resume = () => {
                 {' '}
                 <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>100+</em>
                 {' '}
-                code reviews on Html, CSS, Javascript, React-Redux, Ruby, and Ruby on Rails projects
+                code reviews on HTML, CSS, Javascript, React-Redux, Ruby, and Ruby on Rails projects
                 while giving constructive and supportive feedback.
               </Typography>
             </Grid>
@@ -161,8 +163,8 @@ const Resume = () => {
                 <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>1200+</em>
                 {' '}
                 hours mastering algorithms, data structures, and full-stack development
-                while simultaneously developing projects with, Ruby on Rails,
-                Javascript, React and Redux, HTML, CSS, and, Bootstrap.
+                while simultaneously developing projects with Ruby on Rails,
+                Javascript, React and Redux, HTML, CSS, and Bootstrap.
                 Developed skills in remote pair programming using GitHub, industry-standard GitFlow,
                 and daily standups to communicate and collaborate with
                 international remote developers.

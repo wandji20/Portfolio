@@ -28,7 +28,7 @@ const projects = [
     id: 2,
     title: 'A plus Garage',
     url: garage,
-    description: 'A mobile car tracker to monitor and update car parts while using a Rails API manage UI data.',
+    description: 'The application uses a Rails API to manage UI data while monitoring and updating car parts.',
     stacks: ['React and Redux', 'Ruby on Rails', 'JavaScript', 'HTML', 'Bootstrap', 'CSS'],
     live: 'https://a-plus-garage.netlify.app/',
     source: 'https://github.com/wandji20/a-plus-garage',
