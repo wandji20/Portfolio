@@ -60,13 +60,39 @@ const Resume = () => {
               Employment
             </Typography>
             <Grid className="resume-list-item">
+              <Typography className="resume-list-item-title">Freelance Developer (Upwork)</Typography>
+              <Typography>
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>March 2022 - Present</em>
+                {' '}
+              </Typography>
+              <Typography>
+                Complete over
+                {' '}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>120 plus</em>
+                {' '}
+                hours of work on Upwork and navigate
+                {' '}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>20 plus</em>
+                {' '}
+                tasks through the development cycle to production using agile methods.
+                In addition, communicate with the product manager and other team members.
+                As a result, a
+                {' '}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>100%</em>
+                {' '}
+                client satisfaction rate and a positive relationship
+                with all team members.
+              </Typography>
+            </Grid>
+            <Grid className="resume-list-item">
               <Typography className="resume-list-item-title">MarbleFlows</Typography>
               <Typography>
                 {' '}
-                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>March 2022  -  Present</em>
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>January 2022  - February</em>
               </Typography>
               <Typography>
-                Add secure payment gateways and API integrations,
+                Work closely in collaboration with customer success team,
+                add secure payment gateways and API integrations,
                 landing pages based on Figma designs, bug fixes,
                 and improved performance for slow queries.
                 This resulted in up to
@@ -75,22 +101,6 @@ const Resume = () => {
                 {' '}
                 plus speed increase
                 and improved performance overall.
-              </Typography>
-            </Grid>
-            <Grid className="resume-list-item">
-              <Typography className="resume-list-item-title">Freelance Developer</Typography>
-              <Typography>
-                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>Oct 2021  -  Feb 2022</em>
-                {' '}
-              </Typography>
-              <Typography>
-                Completed
-                {' '}
-                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>eight (08)</em>
-                {' '}
-                Jira tasks for a smart car parking system while performing
-                backend and front-end roles alongside
-                being involved in the code review process.
               </Typography>
             </Grid>
             <Grid className="resume-list-item">
