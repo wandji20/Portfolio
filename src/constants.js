@@ -29,7 +29,7 @@ const projects = [
     title: 'A plus Garage',
     url: garage,
     description: 'The application uses a Rails API to manage UI data while monitoring and updating car parts.',
-    stacks: ['Ruby on Rails', 'JavaScript', 'React' , 'Redux', 'HTML', 'Bootstrap', 'CSS'],
+    stacks: ['Ruby on Rails', 'JavaScript', 'React', 'Redux', 'HTML', 'Bootstrap', 'CSS'],
     live: 'https://a-plus-garage.netlify.app/',
     source: 'https://github.com/wandji20/a-plus-garage',
   },

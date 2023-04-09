@@ -44,37 +44,6 @@ const Resume = () => {
         >
           Resume_
         </Typography>
-        <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' } }}>
-          In the past year, I served as a full-stack developer at
-          {' '}
-          <a
-            href="https://marbleflows.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: 'none', display: 'inline' }}
-          >
-            Marbleflows
-          </a>
-          .
-          Completing over
-          {' '}
-          <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>100 plus</em>
-          {' '}
-          Jira tasks by building features, fixing bugs,
-          and performance improvements.
-
-        </Typography>
-        <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' } }}>
-          I achieved these by properly organizing my work and time, staying focused on the task,
-          learning new technologies (e.g. MaterialUI, Jira, GraphQL), and staying in constant
-          communication with the rest of the team.
-        </Typography>
-        <Typography sx={{
-          marginBottom: '30px', lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' },
-        }}
-        >
-          When I am not coding, you will find me playing soccer or teaching Mathematics.
-        </Typography>
         <Grid className="resume">
           <Grid sx={{ margin: '30px 0' }} className="resume-list">
             <Typography sx={{
@@ -174,7 +143,7 @@ const Resume = () => {
               <Typography className="resume-list-item-title">University of Buea</Typography>
               <Typography><em style={{ fontStyle: 'inherit', fontWeight: '600' }}> Oct 2010  -  July 2013</em></Typography>
               <Typography>
-                Completed coursework with First Class Honors.
+                Complete coursework with First Class Honors.
                 Mastered skills in communication and understanding enabling me to stay
                 calm and communicate properly under pressure.
               </Typography>
