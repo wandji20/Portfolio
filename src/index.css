@@ -28,6 +28,15 @@ body {
   font-family: Roboto Mono,monospace;
 }
 
+.contact-form label {
+  color: white !important;
+}
+
+.contact-form fieldset {
+  border-color: white !important;
+  color: white !important;
+}
+
 .contact-list dd {
   padding-left: 80px;
   margin-bottom: 15px;

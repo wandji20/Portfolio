@@ -5,34 +5,6 @@ import {
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
-import { withStyles } from '@mui/styles';
-
-const CustomTextField = withStyles({
-  root: {
-    '& label': {
-      color: 'white',
-      fontFamily: 'Roboto Mono,monospace',
-    },
-    '& label.Mui-focused': {
-      color: 'white',
-    },
-    '& .MuiInput-underline:after': {
-      borderBottomColor: 'white',
-    },
-    '& .MuiOutlinedInput-root': {
-      '& fieldset': {
-        borderColor: 'white',
-        color: 'white',
-      },
-      '&:hover fieldset': {
-        borderColor: 'white',
-      },
-      '&.Mui-focused fieldset': {
-        borderColor: 'white',
-      },
-    },
-  },
-})(TextField);
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -146,8 +118,8 @@ const Contact = () => {
               >
                 Or send me an email here_
               </Typography>
-              <form onSubmit={sendMessage}>
-                <CustomTextField
+              <form className="contact-form" onSubmit={sendMessage}>
+                <TextField
                   sx={{
                     width: '100%', marginBottom: '15px', color: 'white', borderColor: 'white',
                   }}
@@ -163,7 +135,7 @@ const Contact = () => {
                   variant="outlined"
                   required
                 />
-                <CustomTextField
+                <TextField
                   sx={{
                     width: '100%', marginBottom: '15px', color: 'white', borderColor: 'white',
                   }}
@@ -179,7 +151,7 @@ const Contact = () => {
                   onChange={(e) => setEmail(e.target.value)}
                   required
                 />
-                <CustomTextField
+                <TextField
                   sx={{ width: '100%', marginBottom: '15px' }}
                   inputProps={{
                     sx: {
