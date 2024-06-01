@@ -6,8 +6,11 @@ import Skill from './Skill';
 
 const Resume = () => {
   const skills = [
+    { name: 'Ruby', competence: 80 },
     { name: 'Ruby on Rails', competence: 80 },
+    { name: 'JavaScript', competence: 80 },
     { name: 'ReactJS', competence: 77 },
+    { name: 'VueJS', competence: 80 },
     { name: 'GraphQL', competence: 80 },
     { name: 'SQL', competence: 75 },
     { name: 'HTML', competence: 85 },
@@ -60,22 +63,54 @@ const Resume = () => {
               Employment
             </Typography>
             <Grid className="resume-list-item">
-              <Typography className="resume-list-item-title">Freelance Developer (Upwork)</Typography>
+              <Typography className="resume-list-item-title">SciNote ELN</Typography>
               <Typography>
-                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>March 2022 - Present</em>
+                <em style={{ fontStyle: 'inherit', fontWeight: '600', fontSize: '14px' }}>June 2023 - April 2024 (1 yr)</em>
                 {' '}
               </Typography>
               <Typography>
-                Complete over
+                Completed
                 {' '}
-                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>120 plus</em>
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>280 plus</em>
                 {' '}
-                hours of work on Upwork and navigate
+                Jira tickets covering package upgrades, bug fixes, code quality improvements,
+                and writing API documentation while communicating daily with the
                 {' '}
-                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>20 plus</em>
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>development (09 members)</em>
+                {' ,'}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>UX</em>
+                {' ,'}
+                and
                 {' '}
-                tasks through the development cycle to production using agile methods.
-                In addition, communicate with the product manager and other team members.
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>product (05 members)</em>
+                {' '}
+                teams.
+              </Typography>
+              <Typography>
+                Also, I contributed heavily to the development of
+                {' '}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>04 new features</em>
+                {' '}
+                that are now serving as upsell features.
+              </Typography>
+            </Grid>
+            <Grid className="resume-list-item">
+              <Typography className="resume-list-item-title">Freelance Developer (Upwork)</Typography>
+              <Typography>
+                <em style={{ fontStyle: 'inherit', fontWeight: '600', fontSize: '14px' }}>March 2022 - May 2023 (03 months)</em>
+                {' '}
+              </Typography>
+              <Typography>
+                Completed over
+                {' '}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>420 plus</em>
+                {' '}
+                hours of work on Upwork and navigated
+                {' '}
+                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>40 plus</em>
+                {' '}
+                tasks through the development cycle to production using agile methods while
+                constantly in sync with the product and development team members.
                 As a result, a
                 {' '}
                 <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>100%</em>
@@ -88,25 +123,23 @@ const Resume = () => {
               <Typography className="resume-list-item-title">MarbleFlows</Typography>
               <Typography>
                 {' '}
-                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>January 2022  - February</em>
+                <em style={{ fontStyle: 'inherit', fontWeight: '600', fontSize: '14px' }}>March 2022  - February 2023 (1 yr)</em>
               </Typography>
               <Typography>
-                Work closely in collaboration with customer success team,
-                add secure payment gateways and API integrations,
-                landing pages based on Figma designs, bug fixes,
-                and improved performance for slow queries.
-                This resulted in up to
+                Work closely in collaboration with customer success team and took complete
+                ownership of one project (Marble Academies).
+                Added secure payment gateways and API integrations, fixed bugs, optimize code
+                and improve slow queries by up to
                 {' '}
                 <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>7000ms</em>
                 {' '}
-                plus speed increase
-                and improved performance overall.
+                resulting to great customer satisfaction.
               </Typography>
             </Grid>
             <Grid className="resume-list-item">
               <Typography className="resume-list-item-title">Microverse code Reviewer</Typography>
               <Typography>
-                <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>September 2021  -  February 2022</em>
+                <em style={{ fontStyle: 'inherit', fontWeight: '600', fontSize: '14px' }}>September 2021  -  February 2022 (06 months)</em>
                 {' '}
               </Typography>
               <Typography>
@@ -115,7 +148,8 @@ const Resume = () => {
                 <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>100+</em>
                 {' '}
                 code reviews on HTML, CSS, Javascript, React-Redux, Ruby, and Ruby on Rails projects
-                while giving constructive and supportive feedback.
+                for other developers,
+                while providing guides and suggestions to improve code quality and readability.
               </Typography>
             </Grid>
           </Grid>
@@ -135,14 +169,14 @@ const Resume = () => {
             </Typography>
             <Grid className="resume-list-item">
               <Typography className="resume-list-item-title">Microverse</Typography>
-              <Typography><em style={{ fontStyle: 'inherit', fontWeight: '600' }}> Oct 2020  -  Aug 2021</em></Typography>
+              <Typography><em style={{ fontStyle: 'inherit', fontWeight: '600', fontSize: '14px' }}> Oct 2020  -  Aug 2021</em></Typography>
               <Typography>
                 Spent
                 {' '}
                 <em style={{ fontStyle: 'inherit', fontWeight: '600' }}>1200+</em>
                 {' '}
                 hours mastering algorithms, data structures, and full-stack development
-                while simultaneously developing projects with Ruby on Rails,
+                while simultaneously developing projects with Ruby on Rails, Ruby,
                 Javascript, React and Redux, HTML, CSS, and Bootstrap.
                 Developed skills in remote pair programming using GitHub, industry-standard GitFlow,
                 and daily standups to communicate and collaborate with
@@ -150,12 +184,12 @@ const Resume = () => {
               </Typography>
             </Grid>
             <Grid className="resume-list-item">
-              <Typography className="resume-list-item-title">University of Buea</Typography>
-              <Typography><em style={{ fontStyle: 'inherit', fontWeight: '600' }}> Oct 2010  -  July 2013</em></Typography>
+              <Typography className="resume-list-item-title">University of Bamenda</Typography>
+              <Typography><em style={{ fontStyle: 'inherit', fontWeight: '600', fontSize: '14px' }}> Oct 2010  -  July 2013</em></Typography>
               <Typography>
-                Complete coursework with First Class Honors.
-                Mastered skills in communication and understanding enabling me to stay
-                calm and communicate properly under pressure.
+                Obtained a Higher Teachers Training Diploma in Mathematics.
+                I also mastered communication with peers, human psychology,
+                and teaching and learning methods.
               </Typography>
             </Grid>
           </Grid>

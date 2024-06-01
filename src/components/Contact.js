@@ -4,7 +4,7 @@ import {
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import XIcon from '@mui/icons-material/X';
 import { withStyles } from '@mui/styles';
 
 const CustomTextField = withStyles({
@@ -128,8 +128,8 @@ const Contact = () => {
                 <Link href="https://www.linkedin.com/in/wandji-bertrand/" rel="noopener" target="_blank" className="profile-social-icon">
                   <LinkedInIcon />
                 </Link>
-                <Link href="https://github.com/wandji20" rel="noopener" target="_blank" className="profile-social-icon">
-                  <TwitterIcon />
+                <Link href="https://x.com/wandjibertrand" rel="noopener" target="_blank" className="profile-social-icon">
+                  <XIcon />
                 </Link>
               </Box>
             </Grid>

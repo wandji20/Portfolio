@@ -74,15 +74,13 @@ function App() {
             Hi_
           </Typography>
           <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' } }}>
-            Resilient,  diligent full-stack developer with a deep passion
-            for writing tested reusable code.
-            With solid problem-solving and analytical skills,
-            excels at working with teams and building software solutions
-            using the latest technologies. Well-recognized for
-            commitment and completing work on time.
+            Resilient full-stack developer with strong motivation for learning new things.
+            With solid problem-solving and analytical skills, excels at working in teams
+            and loves writing simple and reusable software solutions.
+            Well-recognized for commitment and completing work on time.
           </Typography>
           <Typography sx={{ lineHeight: 'inherit', fontSize: 'inherit', maxWidth: { sm: '600px', md: '800px' } }}>
-            When not coding, you will find me teaching Mathematics, swimming, or playing soccer.
+            In my free time, you will find me playing soccer, visiting a family member, etc.
           </Typography>
           <Typography sx={{ marginBottom: '36px', lineHeight: 'inherit', fontSize: 'inherit' }}>Open to new roles.</Typography>
           <Button
