@@ -61,7 +61,7 @@ const Profile = ({ activeNav }) => (
           <Box sx={{ marginBottom: '20px' }}>
             <dl className="contact-list">
               <dt>EMAIL:</dt>
-              <dd>wbertrand10@gmail.com</dd>
+              <dd>wandji.bt@gmail.com</dd>
               <dt>ADDRESS:</dt>
               <dd>Douala, Cameroon</dd>
             </dl>
