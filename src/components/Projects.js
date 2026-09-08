@@ -41,7 +41,7 @@ const Projects = () => (
       </Typography>
       <Grid container sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }} spacing={{ xs: 3, sm: 4 }}>
         {projects.map((project) => (
-          <Grid item key={project.id} sx={{ width: { xs: '100%' } }}>
+          <Grid key={project.id} sx={{ width: { xs: '100%' } }}>
             <Card sx={{
               display: { xs: 'block', md: 'flex' },
               justifyContent: 'space-between',
@@ -74,7 +74,7 @@ const Projects = () => (
                   <Typography variant="body2" color="text.secondary">
                     {project.description}
                   </Typography>
-                  <Stack direction="row" spacing={2} flexWrap="wrap" marginTop="10px">
+                  <Stack direction="row" spacing={2} sx={{ flexWrap: 'wrap', marginTop: '10px' }}>
                     {project.stacks.map((stack) => (
                       <Item key={stack}>{stack}</Item>
                     ))}

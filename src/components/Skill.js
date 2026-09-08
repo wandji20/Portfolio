@@ -10,14 +10,12 @@ const Skill = ({ skill }) => {
 
   useEffect(() => {
     const currentProgressRef = progressRef.current;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(entry.isIntersecting);
-          observer.unobserve(currentProgressRef);
-        }
-      }, { rootMargin: '0px' },
-    );
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(entry.isIntersecting);
+        observer.unobserve(currentProgressRef);
+      }
+    }, { rootMargin: '0px' });
 
     if (currentProgressRef) { observer.observe(currentProgressRef); }
 
@@ -55,8 +53,8 @@ const Skill = ({ skill }) => {
             backgroundColor: '#C4C4C4',
             height: '6px',
             marginBottom: '30px',
-            '& .MuiLinearProgress-bar1Determinate': {
-              background: '#6d56c1',
+            '& .MuiLinearProgress-bar': {
+              backgroundColor: '#6d56c1',
             },
           }}
         />

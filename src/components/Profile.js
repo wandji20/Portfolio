@@ -41,7 +41,7 @@ const Profile = ({ activeNav }) => (
           width: '100%',
         }}
         >
-          <Box position="absolute">
+          <Box sx={{ position: 'absolute' }}>
             <img style={{ borderRadius: '5px', height: '360px' }} src={image} alt="wandji bertrand" width="100%" />
           </Box>
         </Grid>

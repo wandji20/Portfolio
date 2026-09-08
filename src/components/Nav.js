@@ -25,99 +25,97 @@ const Nav = ({ activeNav }) => {
   const color = activeNav ? 'rgba(0, 0, 0, 0.87)' : 'white';
 
   return (
-    <>
-      <AppBar
-        className="menu"
+    <AppBar
+      className="menu"
+      sx={{
+        background,
+        boxShadow,
+      }}
+    >
+      <Container
         sx={{
-          background,
-          boxShadow,
+          height: '100%',
+          padding: {
+            xs: '0 16px', sm: 0,
+          },
+          width: {
+            xs: '100%', sm: '90%', md: '80%', lg: '75%',
+          },
         }}
       >
-        <Container
-          sx={{
-            height: '100%',
-            padding: {
-              xs: '0 16px', sm: 0,
-            },
-            width: {
-              xs: '100%', sm: '90%', md: '80%', lg: '75%',
-            },
-          }}
-        >
-          <Toolbar disableGutters sx={{ alignItems: `${activeNav ? 'center' : 'flex-end'}`, height: '100%' }}>
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color={color}
-                sx={{ padding: 0 }}
-              >
-                <MenuIcon sx={{ color }} />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElRef.current}
-                anchorOrigin={{
-                  vertical: 'bottom',
-                  horizontal: 'left',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'left',
-                }}
-                open={showNav}
-                onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: 'block', md: 'none' },
-                }}
-              >
-                {sections.map((section) => (
-                  <MenuItem key={section} onClick={handleCloseNavMenu}>
-                    <Link href={`#${section}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                      {section}
-                    </Link>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box>
-
-            <Box sx={{
-              flexGrow: 1,
-              display: {
-                xs: 'none', md: 'flex',
-              },
-              color,
-            }}
+        <Toolbar disableGutters sx={{ alignItems: `${activeNav ? 'center' : 'flex-end'}`, height: '100%' }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color={color}
+              sx={{ padding: 0 }}
+            >
+              <MenuIcon sx={{ color }} />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElRef.current}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={showNav}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
             >
               {sections.map((section) => (
-                <Button
-                  sx={{
-                    text: 'uppercase',
-                    color: '#555',
-                    display: 'block',
-                    paddingLeft: 0,
-                    marginRight: '50px',
-                    fontSize: '14px',
-                    fontWeight: 800,
-                    fontFamily: 'Roboto Mono,monospace',
-                  }}
-                  key={section}
-                  onClick={handleCloseNavMenu}
-                >
+                <MenuItem key={section} onClick={handleCloseNavMenu}>
                   <Link href={`#${section}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                     {section}
                   </Link>
-                </Button>
+                </MenuItem>
               ))}
-            </Box>
-          </Toolbar>
-        </Container>
-      </AppBar>
-    </>
+            </Menu>
+          </Box>
+
+          <Box sx={{
+            flexGrow: 1,
+            display: {
+              xs: 'none', md: 'flex',
+            },
+            color,
+          }}
+          >
+            {sections.map((section) => (
+              <Button
+                sx={{
+                  text: 'uppercase',
+                  color: '#555',
+                  display: 'block',
+                  paddingLeft: 0,
+                  marginRight: '50px',
+                  fontSize: '14px',
+                  fontWeight: 800,
+                  fontFamily: 'Roboto Mono,monospace',
+                }}
+                key={section}
+                onClick={handleCloseNavMenu}
+              >
+                <Link href={`#${section}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  {section}
+                </Link>
+              </Button>
+            ))}
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
 };
 
