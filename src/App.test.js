@@ -1,8 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders the profile name', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/Wandji Bertrand_/i)).toBeInTheDocument();
+});
+
+test('renders the OneView Properties project', () => {
+  render(<App />);
+  expect(screen.getAllByText(/OneView Properties/i).length).toBeGreaterThan(0);
 });

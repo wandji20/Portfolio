@@ -56,18 +56,21 @@ const Profile = ({ activeNav }) => (
               {' '}
               Wandji Bertrand_
             </Typography>
-            <Typography variant="p" sx={{ fontSize: '16px', lineHeight: '24px', marginBottom: '40px' }}> full-stack developer</Typography>
+            <Typography variant="p" sx={{ fontSize: '16px', lineHeight: '24px', marginBottom: '40px' }}>
+              Full-stack Ruby on Rails developer · Lead Engineer (OneView Properties)
+              · Open Food Network contributor
+            </Typography>
           </Box>
           <Box sx={{ marginBottom: '20px' }}>
             <dl className="contact-list">
               <dt>EMAIL:</dt>
               <dd>wandji.bt@gmail.com</dd>
               <dt>ADDRESS:</dt>
-              <dd>Douala, Cameroon</dd>
+              <dd>Douala, Cameroon (Remote)</dd>
             </dl>
           </Box>
           <Box sx={{ display: 'flex', paddingBottom: '35px' }}>
-            <Link href="https://twitter.com/wandjibertrand" rel="noopener" target="_blank" className="profile-social-icon">
+            <Link href="https://github.com/wandji20" rel="noopener" target="_blank" className="profile-social-icon">
               <GitHubIcon />
             </Link>
             <Link href="https://www.linkedin.com/in/wandji-bertrand/" rel="noopener" target="_blank" className="profile-social-icon">

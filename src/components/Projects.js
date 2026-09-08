@@ -81,28 +81,32 @@ const Projects = () => (
                   </Stack>
                 </CardContent>
                 <CardActions sx={{ padding: '8px 16px' }}>
-                  <a
-                    href={project.live}
-                    style={{
-                      display: 'flex', textDecoration: 'none', alignItems: 'center', marginRight: '10px', color: 'inherit',
-                    }}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Typography sx={{ display: 'inline-block', marginRight: '5px' }}>live</Typography>
-                    <RemoveRedEyeIcon />
-                  </a>
-                  <a
-                    href={project.source}
-                    style={{
-                      display: 'flex', textDecoration: 'none', alignItems: 'center', color: 'inherit',
-                    }}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Typography sx={{ display: 'inline-block', marginRight: '5px' }}>source code</Typography>
-                    <GitHubIcon />
-                  </a>
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      style={{
+                        display: 'flex', textDecoration: 'none', alignItems: 'center', marginRight: '10px', color: 'inherit',
+                      }}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Typography sx={{ display: 'inline-block', marginRight: '5px' }}>live</Typography>
+                      <RemoveRedEyeIcon />
+                    </a>
+                  )}
+                  {project.source && (
+                    <a
+                      href={project.source}
+                      style={{
+                        display: 'flex', textDecoration: 'none', alignItems: 'center', color: 'inherit',
+                      }}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Typography sx={{ display: 'inline-block', marginRight: '5px' }}>source code</Typography>
+                      <GitHubIcon />
+                    </a>
+                  )}
                 </CardActions>
               </Box>
             </Card>

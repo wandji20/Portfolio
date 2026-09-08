@@ -90,11 +90,11 @@ const Contact = () => {
                   <dt>PHONE</dt>
                   <dd>+(237) 678 163 225</dd>
                   <dt>EMAIL</dt>
-                  <dd>wbertrand10@gmail.com</dd>
+                  <dd>wandji.bt@gmail.com</dd>
                 </dl>
               </Box>
               <Box sx={{ display: 'flex', paddingBottom: '35px' }}>
-                <Link href="https://twitter.com/wandjibertrand" rel="noopener" target="_blank" className="profile-social-icon">
+                <Link href="https://github.com/wandji20" rel="noopener" target="_blank" className="profile-social-icon">
                   <GitHubIcon />
                 </Link>
                 <Link href="https://www.linkedin.com/in/wandji-bertrand/" rel="noopener" target="_blank" className="profile-social-icon">
